@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestReport" duration-ms="28335" started-at="2017-08-11T18:02:54Z" finished-at="2017-08-11T18:03:23Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="28335" started-at="2017-08-11T18:02:54Z" finished-at="2017-08-11T18:03:23Z">
+      <class name="TestReport">
+        <test-method status="PASS" signature="verifyBlogTitle()" name="verifyBlogTitle" duration-ms="27914" started-at="2017-08-11T18:02:54Z" finished-at="2017-08-11T18:03:22Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="406" started-at="2017-08-11T18:03:22Z" finished-at="2017-08-11T18:03:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult: verifyBlogTitle STATUS:SUCCESS METHOD:TestReport.verifyBlogTitle()]
+]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

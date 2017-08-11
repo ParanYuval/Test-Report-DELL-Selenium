@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="Yuvalp" tests="1" failures="0" timestamp="11 Aug 2017 15:03:23 GMT" time="28.335" errors="0">
+  <testcase name="verifyBlogTitle" time="27.914" classname="TestReport"/>
+</testsuite>
