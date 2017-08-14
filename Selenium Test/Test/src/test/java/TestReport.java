@@ -16,7 +16,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class TestReport 
 { 
-	//δβγψϊ ξωϊπιν μριμπιεν εμαγιχεϊ
+	//Γ¤ΓΆΓ£ΓΈΓΊ Γ®ΓΉΓΊΓ°Γ©Γ­ Γ¬Γ±Γ©Γ¬Γ°Γ©Γ¥Γ­ Γ¥Γ¬Γ΅Γ£Γ©Γ·Γ¥ΓΊ
 	ExtentReports report;
 	ExtentTest logger; 
 	WebDriver driver;
@@ -28,11 +28,11 @@ public class TestReport
 @Test
 public void verifyBlogTitle() throws IOException
 {
-	//ιφιψϊ δγεη
-	report=new ExtentReports("C:\\Report\\LearnAutomation1.html");
+	//Γ©Γ¶Γ©ΓΈΓΊ Γ¤Γ£Γ¥Γ§
+	report=new ExtentReports("C:\\LearnAutomation1.html");
 	logger=report.startTest("Test Report DELL");
 
-	//αγιχδ ψΰωεπδ- παγεχ δΰν δΰϊψ χιιν- παφς δλωμδ αλεεπδ αλκ ωπιϊο λϊεαϊ ωμΰ χιιξϊ
+	//Γ΅Γ£Γ©Γ·Γ¤ ΓΈΓ ΓΉΓ¥Γ°Γ¤- Γ°Γ΅Γ£Γ¥Γ· Γ¤Γ Γ­ Γ¤Γ ΓΊΓΈ Γ·Γ©Γ©Γ­- Γ°Γ΅Γ¶Γ² Γ¤Γ«ΓΉΓ¬Γ¤ Γ΅Γ«Γ¥Γ¥Γ°Γ¤ Γ΅Γ«Γª ΓΉΓ°Γ©ΓΊΓ― Γ«ΓΊΓ¥Γ΅ΓΊ ΓΉΓ¬Γ  Γ·Γ©Γ©Γ®ΓΊ
 	String url_s="http://www.kljfffff..com";	
 	URL url = new URL(url_s);
 	logger.log(LogStatus.INFO, "Browser started ");
@@ -57,21 +57,21 @@ public void verifyBlogTitle() throws IOException
 	
 	
 	
-	//αγιχδ ωπιιδ - παφς βμιωδ αΰϊψ ϊχιο μημεθιο 
+	//Γ΅Γ£Γ©Γ·Γ¤ ΓΉΓ°Γ©Γ©Γ¤ - Γ°Γ΅Γ¶Γ² ΓΆΓ¬Γ©ΓΉΓ¤ Γ΅Γ ΓΊΓΈ ΓΊΓ·Γ©Γ― Γ¬Γ§Γ¬Γ¥Γ¨Γ©Γ― 
 	driver=new FirefoxDriver();
 	driver.get("http://www.ynet.co.il/home/0,7340,L-8,00.html");
 	logger.log(LogStatus.INFO, "Application is up and running-SITE 2");
-    driver.findElement(By.linkText("ξζβ ΰεειψ")).click();
+    driver.findElement(By.linkText("Γ®Γ¦ΓΆ Γ Γ¥Γ¥Γ©ΓΈ")).click();
     title=driver.getTitle();
     Assert.assertTrue(title.contains("ynet"));
 	logger.log(LogStatus.PASS, "Title verified SITE 2");
 	
 	
-	// αγιχδ ωμιωιϊ - παφς βμιωδ επλωιμ αλεεπδ ςμ λεϊψϊ δΰϊψ ωμΰ πλεπδ.
+	// Γ΅Γ£Γ©Γ·Γ¤ ΓΉΓ¬Γ©ΓΉΓ©ΓΊ - Γ°Γ΅Γ¶Γ² ΓΆΓ¬Γ©ΓΉΓ¤ Γ¥Γ°Γ«ΓΉΓ©Γ¬ Γ΅Γ«Γ¥Γ¥Γ°Γ¤ Γ²Γ¬ Γ«Γ¥ΓΊΓΈΓΊ Γ¤Γ ΓΊΓΈ ΓΉΓ¬Γ  Γ°Γ«Γ¥Γ°Γ¤.
 	driver.get("http://www.Google.com");
 	logger.log(LogStatus.INFO, "Application is up and running-SITE 3");
 	String title=driver.getTitle();
-	driver.findElement(By.id("lst-ib")).sendKeys("ιεαμ");
+	driver.findElement(By.id("lst-ib")).sendKeys("Γ©Γ¥Γ΅Γ¬");
 	driver.findElement(By.name("btnK")).click();
 	if(!title.contains("fg"))
 	{
@@ -81,7 +81,7 @@ public void verifyBlogTitle() throws IOException
 		logger.log(LogStatus.PASS, "Title verified");
 }
  
- //χωεψ μρεβ αγιχδ δωμιωι - αξιγδ επλωμ ιφιβ δεγςδ ξϊΰιξδ
+ //Γ·ΓΉΓ¥ΓΈ Γ¬Γ±Γ¥ΓΆ Γ΅Γ£Γ©Γ·Γ¤ Γ¤ΓΉΓ¬Γ©ΓΉΓ© - Γ΅Γ®Γ©Γ£Γ¤ Γ¥Γ°Γ«ΓΉΓ¬ Γ©Γ¶Γ©ΓΆ Γ¤Γ¥Γ£Γ²Γ¤ Γ®ΓΊΓ Γ©Γ®Γ¤
 @AfterMethod
 public void tearDown(ITestResult result)
 {
